@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test.css">
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        div {margin-bottom:1000px;}
+    </style>
+
+</head>
+<body>
+<!--<div class="inner">-->
+<!--    <a href="#" class="pf-geekstar">-->
+<!--        <div class="title">-->
+<!--            긱스타 채널 추가하고<br>-->
+<!--            <span>게이밍 기기 10% 할인받자!</span>-->
+<!--        </div>-->
+<!--        <div class="bandImg"><img src="images/Frame%20155.png" alt=""> </div>-->
+<!--    </a>-->
+<!--    <a href="#" class="pf-geekstar">-->
+<!--        <div class="title">-->
+<!--            오뚜기 채널 추가하고<br>-->
+<!--            <span>게이밍 기기 10% 할인받자!</span>-->
+<!--        </div>-->
+<!--        <div class="bandImg"><img src="images/Frame%20155.png" alt=""> </div>-->
+<!--    </a>-->
+<!--</div>-->
+<!--<div class="t"></div>-->
+<button onclick="fnMove('1')">div1로 이동</button>
+<button onclick="fnMove('2')">div2로 이동</button>
+<button onclick="fnMove('3')">div3로 이동</button>
+<div id="div1">div1</div>
+<div id="div2">div2</div>
+<div id="div3">div3</div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    function fnMove(seq){
+        var offset = $("#div" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

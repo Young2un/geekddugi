@@ -1,0 +1,604 @@
+@import url('https://webfontworld.github.io/goodchoice/Jalnan.css');
+
+
+
+main {
+    background: linear-gradient(#FF2D7D 10%, #ff2d2d 80%);
+}
+
+/*.first{*/
+/*    background-image: url("../images/콜라보페이지.png") ;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: top center;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+
+section {
+    position: relative;
+    text-align: center;
+}
+.visual {
+}
+.visual .top-img{
+    margin: 100px auto 0;
+}
+
+.visual .tab-con {
+    position: relative;
+    width: 1200px;
+    background: white;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+    box-shadow: rgba(140, 27, 75, 0.71) 5px 5px 6px;
+
+}
+
+.visual .tab-con .event-menu{
+    background: #DF3232;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    line-height: 100px;
+    font-family: 'Jalnan','Noto Sans KR';
+}
+
+.visual .tab-con .event-menu li {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+}
+
+.visual .tab-con .event-menu li.active {
+    background: white;
+    color: #222;
+}
+.visual .tab-con .tabs {
+    padding: 100px;
+}
+
+.visual .tab-con .tabs .tab-item  {
+    display: none;
+}
+
+.visual .tab-con .tabs .tab-item.active{
+    display: block;
+}
+
+
+.visual .tab-con .tabs .tab-item {
+    text-align: center;
+}
+
+.visual .tab-con .tabs .tab-item  h2 {
+    margin-bottom: 15px;
+    color: #ff2d2d;
+    font-size: 40px;
+    font-family: 'Jalnan','Noto Sans KR';
+}
+.visual .tab-con .tabs .tab-item  p {
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.visual .tab-con .tabs .tab-item  p span {
+    font-weight: 600;
+}
+
+.visual .tab-con .tabs .tab-item  p span.red{
+    color:#ff2d2d;
+}
+.visual .tab-con .tabs #tab1 img {
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+}
+
+.visual .tab-con .tabs #tab1 strong {
+    margin-top: 20px;
+    display: block;
+    font-size: 24px;
+}
+.visual .tab-con .tabs #tab1 small{
+    display: block;
+    font-size: 20px;
+}
+
+.visual .tab-con .tabs #tab1 button {
+    margin-top: 20px;
+    border: none;
+    width:500px;
+    height: 80px;
+    background: #ff2d2d;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+}
+
+.visual .tab-con .tabs #tab1 button a{
+    color: white;
+   line-height: 80px;
+    font-size: 28px;
+}
+
+.visual .tab-con .tabs #tab1 button a i {
+    transform: rotate(20deg) scale(1.09);
+}
+
+/*#tab2*/
+
+.list-con {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.list-con li{
+    margin: 35px;
+    display: inline-block;
+}
+
+.list {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.list .img {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 250px;
+    height:250px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+}
+
+.list .img img {
+    width: 100%;
+    height: 100%;
+
+}
+.list .name {
+
+}
+.list .name strong {
+    margin-top: 15px;
+    font-size: 23px;
+    display: block;
+    text-align: center;
+
+}
+
+.visual .tab-con .tabs #tab2 button {
+    margin-top: 20px;
+    border: none;
+    width:500px;
+    height: 80px;
+    background: #363636;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.visual .tab-con .tabs #tab2 button a{
+    color: white;
+    line-height: 80px;
+    font-size: 28px;
+}
+
+.visual .tab-con .tabs #tab2 button a i {
+    font-size: 30px;
+    line-height: 80px;
+    transform: rotate(20deg) scale(1.09);
+}
+
+
+/*coupon section */
+
+
+.coupon {
+}
+.coupon span{
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+}
+.coupon h2{
+    color: #ffea97;
+    font-size: 45px;
+
+}
+.coupon-con {
+    display: inline-block;
+    margin: 50px;
+}
+.coupon-con:last-child{
+    margin-top: 0;
+}
+
+
+.coupon .coupon-zone {
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-top: 45px;
+    position: relative;
+    background: white;
+    width: 400px;
+    height: 180px;
+}
+
+.coupon .coupon-zone span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(-90deg) translate(-70px, 18px);
+    letter-spacing: 6px;
+    color : #3D3D3D;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.coupon .coupon-zone::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background: #ffd428;
+}
+
+
+.coupon-zone small {
+    font-size: 18px;
+}
+
+.coupon-zone div {
+    font-size: 60px;
+    font-weight: 600;
+    color: #222;
+}
+.coupon-btn {
+    display: inline-block;
+    margin-top: 35px;
+    width: 320px;
+    height: 70px;
+    background: #363636;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.coupon-btn a {
+    color: white;
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 50px;
+}
+
+.coupon-btn a i {
+    font-size: 23px;
+}
+
+
+
+/*card benefit section*/
+.card-benefit {
+    margin-top: 100px;
+}
+
+.card-benefit span{
+    color: white;
+    font-size: 24px;
+    line-height: 40px;
+}
+.card-benefit h2{
+    color: #ffea97;
+    font-size: 45px;
+
+}
+
+
+.card-wrap {
+    width: 800px;
+    margin: 50px auto 150px;
+}
+
+
+.card-con {
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+    padding: 30px;
+    height: 300px;
+    background: white;
+    box-sizing: border-box;
+}
+
+
+.card-con.line1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-wrap .desc {
+    float: left;
+    margin-top: 33px;
+    margin-left: 40px;
+}
+.card-wrap .desc span {
+    display: block;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #222;
+}
+.card-wrap .desc em {
+    display: block;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.card-wrap .desc small {
+    display: block;
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #939393;
+}
+
+.card-wrap .side {
+    float: right;
+    margin-top: 48px;
+    margin-right: 9px;
+    transform: scale(1.25);
+
+}
+
+.line2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.line2 .card-con .desc  {
+   text-align: center;
+    width: 320px;
+    margin: 20px auto;
+}
+
+.side-2 {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: #3D3D3D 0 2px 3px;
+}
+.side-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .visual{
+        padding: 0 20px;
+    }
+
+    .visual .top-img{
+    margin-top: 40px;
+        width: 100%;
+    }
+    .visual .top-img img{width: 100%;}
+
+
+    .visual .tab-con{
+        width: 100%;
+        top: -45px;
+    }
+
+
+    .visual .tab-con .event-menu {
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    .visual .tab-con .tabs {
+        padding: 30px 0;
+    }
+
+    .visual .tab-con .tabs .tab-item  h2{
+        font-size: 28px;
+    }
+
+    .visual .tab-con .tabs .tab-item  p{
+        padding: 0 30px;
+        font-size: 18px;
+    }
+
+    .visual .tab-con .tabs #tab1 img {
+        max-width: 300px;
+    }
+
+    .visual .tab-con .tabs #tab1 strong{
+        font-size:18px;
+    }
+
+    .visual .tab-con .tabs #tab1 small{
+        font-size: 14px;
+    }
+    .visual .tab-con .tabs #tab1 button {
+        margin-top: 20px;
+        width:300px;
+        height:50px;
+    }
+
+    .visual .tab-con .tabs #tab1 button a{
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .visual .tab-con .tabs #tab1 button a i {
+        font-size: 30px;
+        transform: rotate(20deg) scale(0.75) translate(7px,2px);
+    }
+
+
+    .list-con {
+        text-align: left;
+        margin-left: 30px;
+    }
+    .list-con li{
+        margin: 3px;
+        display: inline-block;
+    }
+
+    .list .img {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 150px;
+        height:150px;
+        border: 1px solid #eee;
+        border-radius: 20px;
+    }
+
+    .list .name strong {
+        font-size: 14px;
+    }
+
+    .visual .tab-con .tabs #tab2 button{
+        margin-top: 20px;
+        width:300px;
+        height:50px;
+    }
+
+    .visual .tab-con .tabs #tab2 button a {
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .card-benefit span,
+    .coupon span{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .card-benefit h2,
+    .coupon h2{
+        font-size: 26px;
+    }
+    .coupon-con {
+        margin: 15px 5px;
+    }
+
+
+    .coupon .coupon-zone {
+        padding-right: 43px;
+        padding-top: 25px;
+        width: 180px;
+        height: 100px;
+    }
+
+    .coupon .coupon-zone span{
+        transform: rotate(-90deg) translate(-34px, 24px);
+        font-size: 12px;
+    }
+
+    .coupon-zone small{
+        font-size: 12px;
+    }
+
+    .coupon-zone div{
+        font-size: 30px;
+    }
+
+    .coupon-btn{
+        margin-top: 20px;
+        width: 160px;
+        height: 40px;
+    }
+    .coupon-btn a {
+        line-height: 40px;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 15px;
+    }
+    .coupon-btn a i {
+        font-size: 15px;
+    }
+
+    .card-benefit {
+        margin-top:50px;
+    }
+
+    .card-wrap{
+        padding: 0 10px;
+        width: 90%;
+    }
+
+    .card-wrap .desc {
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .card-wrap .desc span{
+        margin-top: 4px;
+        font-size: 16px;
+    }
+    .card-wrap .desc em{
+        margin-top: 4px;
+        font-size: 22px;
+    }
+
+    .card-wrap .desc small{
+        font-size: 14px;
+    }
+
+
+    .card-wrap .side {
+        width: 50%;
+        margin-top: -127px;
+        margin-right: 44px;
+        transform: scale(0.7);
+    }
+
+    .card-con {
+        display: inline-block;
+        text-align: left;
+        width: 49%;
+        padding: 13px;
+        height:220px;
+        background: white;
+        box-sizing: border-box;
+    }
+    .card-con.line1 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .line2 .card-con .desc  {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .side-2 {
+        margin: 20px auto;
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+
+
+
+}
+
+
+

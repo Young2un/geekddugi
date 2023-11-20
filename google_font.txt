@@ -1,0 +1,33 @@
+구글폰트
+/*Noto Sans KR 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+font-family: 'Noto Sans KR', sans-serif;
+
+
+/*Poppins 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+font-family: 'Poppins', sans-serif;
+
+
+/*Inconsolata 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+font-family: 'Inconsolata', monospace;
+
+
+/*Raleway 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+font-family: 'Raleway', sans-serif;
+
+/*Montserrat 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+font-family: 'Montserrat', sans-serif;
+
+
+
+Awesome font CDN
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />

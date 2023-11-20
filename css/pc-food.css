@@ -1,0 +1,527 @@
+/*body {*/
+/*    margin: 0 auto;*/
+/*    max-width: 1980px;*/
+/*}*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*메인배너*/
+.mainBanner {
+    background: #F6F6F6;
+}
+
+.mainSlider-con {
+    position: relative;
+}
+
+.mainSlider-con .main-slider {
+    padding: 44px 0;
+
+}
+
+.mainSlider-con .main-slider .main-item {
+    position: relative;
+    width: 962px;
+    transform: scale(0.75);
+    transition: 0.5s;
+
+}
+
+.mainSlider-con .main-slider .main-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.mainBanner_v_mobile {
+    display: none;
+}
+
+@keyframes slide_scale {
+    from {
+        transform: scale(0.75);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide_scale2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.75);
+    }
+}
+
+
+.mainSlider-con .main-slider .main-item.slick-center {
+    /*transform: scale(1);*/
+}
+
+.mainSlider-con .main-slider .main-item.slick-center::after {
+    opacity: 0;
+
+}
+
+.mainSlider-con .main-slider .main-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.mainSlider-con .inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mainSlider-con .main-btn {
+}
+
+.mainSlider-con .main-btn div {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainSlider-con .main-btn div.main-btn-left {
+    left: 100px;
+}
+
+.mainSlider-con .main-btn div.main-btn-right {
+    right: 100px;
+}
+
+.mainSlider-con .main-btn div img {
+}
+
+/*냉동식품*/
+
+
+.food-menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid blue;*/
+}
+
+.food-menu a {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0;
+    width: 155px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.frozen .food-menu a:nth-child(1),
+.dduckbokki .food-menu a:nth-child(2),
+.cup-noodle .food-menu a:nth-child(3),
+.ramen .food-menu a:nth-child(4) {
+    font-weight: 600;
+    color: #DF3232;
+    border-bottom: #DF3232 5px solid;
+}
+
+.oKitchen .food-menu a:last-child {
+    color: white;
+    font-weight: 600;
+    background: #DF3232;
+
+}
+
+/*리스트*/
+.food-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.food-list .list .food-img:hover img {
+
+    transform: scale(1.2);
+}
+
+.food-list .list .food-img {
+    margin: 30px;
+    position: relative;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    width: 260px;
+    height: 284px;
+    border-radius: 15px;
+    background: white;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.food-list .list .food-img img {
+    width: 100%;
+    border-radius: 15px;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+
+.food-list .list .food-img::after {
+    content: url("../images/heart-icon1.png");
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+}
+
+.food-list .list .food-img.click::after {
+    content: url("../images/heart-icon2.png");
+}
+
+
+.food-list .list .name {
+    margin-top: 15px;
+    height: 48px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+.food-list .list .name:hover strong {
+    text-decoration: underline;
+    color: #DF3232;
+
+}
+
+.food-list .list .price {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*띠배너*/
+
+.bandBanner {
+}
+
+.banner-con {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.banner-con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*오키친*/
+.oKitchen {
+    background: #FFFDE9;
+}
+
+.oKitchen h2 {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.PcFood-o-slider-con {
+    padding-bottom: 150px;
+    /*height: 500px;*/
+    /*padding-left: 300px;*/
+}
+
+.PcFood-o-slider-con .max-inner {
+    position: relative;
+
+}
+
+.PcFood-o-slider-con .max-inner::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), rgba(255, 253, 233, 0.38), #FFFDE9 90%);
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.PcFood-o-slider-con .slide-inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.PcFood-o-slider-con .slide-inner .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    background: white;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 75px;
+}
+
+
+.PcFood-o-slider-con .logo-box {
+    width: 320px;
+    height: 477px;
+    background: #DF3232;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PcFood-o-slider-con .logo-box a {
+    display: inline-block;
+}
+
+.PcFood-o-slider-con .logo-box a img {
+}
+
+.PcFood-o-slider-con .PcFood-o-slider {
+    position: absolute;
+    left: 350px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*padding-bottom: 150px;*/
+}
+
+.PcFood-o-slider-con .PcFood-o-slider div {
+}
+
+.PcFood-o-slider-con .PcFood-o-slider div.slick-slide {
+    position: relative;
+    text-align: center;
+    margin-right: 10px !important; /*slide간의 여백 설정 */
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0.5;
+    height: 100%;
+}
+
+
+.PcFood-o-slider-con .PcFood-o-slider div img {
+    padding-bottom: 25px;
+}
+
+.PcFood-o-slider-con .PcFood-o-slider div strong {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.PcFood-o-slider-con .PcFood-o-slider div p {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+/*----------------------------------------------------*/
+
+/* Media Query */
+
+/*메인배너*/
+@media (max-width: 768px) {
+
+
+    /*!*메인배너*!---리사이징 하기*/
+    /*.mainSlider-con .main-slider .main-item {*/
+    /*    width: auto;*/
+    /*    height: 300px;*/
+    /*}*/
+    /*.mainSlider-con .main-btn div.main-btn-left {*/
+    /*    left: 10%;*/
+    /*}*/
+    /*.mainSlider-con .main-btn div.main-btn-right {*/
+    /*    right: 10%;*/
+    /*}*/
+    .mainBanner {
+        display: none;
+    }
+
+    .mainBanner_v_mobile {
+        position: relative;
+        display: block;
+    }
+
+    .mainBanner_v_mobile .main-item {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .mainBanner_v_mobile .main-item img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .main-btn-m {
+
+
+    }
+
+    .main-btn-m div {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%) scale(0.8);
+
+    }
+
+    .main-btn-m div.main-btn-left-m {
+        left: 10px;
+
+    }
+
+    .main-btn-m div.main-btn-right-m {
+        right: 10px;
+
+    }
+
+    .mainBanner_v_mobile .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        border-radius: 50px;
+        background: rgba(0, 0, 0, 0.71);
+        border: 2px solid #818181;
+
+    }
+
+    .mainBanner_v_mobile .slick-dots li {
+        width: 7px;
+        height: 7px;
+        background: #eee ;
+        margin: 5px;
+        border-radius: 20px;
+        border: 2px solid #ffffff;
+
+    }
+    .mainBanner_v_mobile .slick-dots .slick-active{
+        border: 2px solid #090f8a;
+    }
+
+    .mainBanner_v_mobile .slick-dots button {
+        display: none;
+    }
+
+    .food-menu{
+        margin-top: 0;
+    }
+    .food-menu a {
+        font-size: 15px;
+    }
+
+    .food-list {
+        padding: 0 16px;
+
+    }
+
+    .food-list .list .food-img {
+        margin: 10px;
+        width: 150px;
+        height: 170px;
+    }
+
+    .food-list .list .name {
+        margin-top: 16px;
+        height: 38px;
+        font-size: 15px;
+    }
+
+    .food-list .list .price {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    /*띠배너*/
+
+
+    .banner-con {
+        width: 200%;
+        transform: translate(-25%, 0);
+    }
+
+    .banner-con img {
+        width: 100%;
+    }
+
+    /*오키친*/
+    .oKitchen h2 {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .PcFood-o-slider-con {
+        padding-bottom: 50px;
+    }
+
+    .PcFood-o-slider-con .slide-inner {
+        width: 100%;
+        height: 450px;
+    }
+
+    .PcFood-o-slider-con .logo-box {
+        display: none;
+    }
+
+    .PcFood-o-slider-con .PcFood-o-slider {
+        padding-left: 20px;
+        left: 0;
+    }
+
+    .PcFood-o-slider-con .PcFood-o-slider div strong {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+
+    .PcFood-o-slider-con .PcFood-o-slider div p {
+        font-size: 18px;
+        padding-bottom: 24px;
+    }
+
+    .PcFood-o-slider-con .slide-inner .slide-btn {
+        display: none;
+    }
+
+
+}

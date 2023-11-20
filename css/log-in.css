@@ -1,0 +1,279 @@
+/*Raleway 폰트 링크*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+
+.login-con {
+    line-height: 1.2;
+    position: relative;
+    font-weight: 100;
+
+}
+
+.login {
+    margin: 0 auto;
+    width: 700px;
+    /*background: #b2b2b2;*/
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    /*transition: 0.3s;*/
+    text-align: center;
+}
+
+.login h2 {
+    margin: 20px auto 60px;
+    line-height: 10px;
+    font-size: 25px;
+    color: #DF3232;
+    font-weight: 600;
+}
+
+.login h3 {
+    margin: 30px auto 0;
+    line-height: 10px;
+    font-size: 19px;
+    color: #303030;
+    font-weight: 300;
+}
+
+.login .item {
+    width: 100%;
+    margin: 0 auto 32px;
+
+}
+
+.login .item input {
+    width: 100%;
+    height: 31px;
+    border: 0;
+    border-bottom: 1px #3D3D3D solid;
+    line-height: 31px;
+    color: #505050;
+    font-size: 15px;
+}
+
+.login .item input::placeholder {
+    color: #3D3D3D;
+}
+
+.login .login-top .item input:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 1px #3D3D3D solid;
+}
+
+.login .login-top .item input:focus::placeholder {
+    visibility: hidden;
+}
+
+.login .login-bottom {
+    color: #303030;
+}
+
+.login .login-bottom input {
+    float: left;
+    display: none;
+}
+
+.login .login-bottom label {
+    float: left;
+}
+.login .login-bottom label .fa {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    line-height: 16px;
+    border: 0.5px solid #6c6c6c;
+    color: #6c6c6c;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.login .login-bottom input:active + label .fa {
+    transform: scale(0);
+}
+
+.login .login-bottom input:checked + label .fa {
+    background: #3D3D3D;
+    color: white;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #3D3D3D;
+}
+
+.login-bottom a {
+    float: right;
+    text-decoration: none;
+    color: #303030;
+}
+.login-bottom a:hover {
+    text-decoration: underline;
+    text-decoration-color: #003D91;
+}
+.login-bottom span {
+    float: right;
+    margin: 0 5px;
+    line-height: 15px;
+}
+
+.login button {
+    width: 500px;
+    height: 50px;
+    background-color: #DF3232;
+    color: white;
+    border: 0;
+    margin: 35px auto 0;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    opacity: 0.65;
+    transition: 0.5s;
+}
+
+.login .sns-icon {
+    margin: 50px auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.login .sns-icon li {
+
+    margin: 0 6px;
+}
+
+.login .sns-icon .google .fa {
+    background: #eb4335;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.login .sns-icon .facebook .fa {
+    background: #3b5998;
+    font-size: 21px;
+    line-height: 42px;
+}
+
+.login .sns-icon .naver .fa {
+    background: #1ec800;
+    line-height: 41px;
+    color: white;
+}
+
+.login .sns-icon .apple .fa {
+    background: black;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+}
+
+.fa-a:before {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    content: 'N';
+}
+
+.login .sns-icon li .fa {
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #372c62;
+    color: white;
+}
+
+.login .sns-icon .kakao {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+}
+
+.login .sns-icon .kakao img{
+    width: 25px;
+    margin: 9px 0;
+
+
+}
+.login .sns-icon .kakao:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.login .sns-icon .kakao:hover img {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.login .sns-icon li:hover .fa {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.login p {
+    color: #505050;
+    font-weight: 300;
+}
+
+.login p a {
+    margin-left: 7px;
+    color: #DF3232;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login p a:hover {
+  opacity: 0.65;
+    transition: 0.3s;
+}
+
+
+
+/* Media Query */
+@media (max-width: 768px) {
+
+    .login {
+        padding: 40px;
+        width: 100%;}
+    .login img {
+        width: 100px;
+    }
+
+    .login h2 {
+        margin: 20px auto 40px;
+        line-height: 10px;
+        font-size: 16px;
+    }
+
+    .login button {
+        width:80%;
+        height: 40px;
+        background-color: #DF3232;
+        color: white;
+        border: 0;
+        margin: 35px auto 0;
+        font-size: 18px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .login .item input {
+        font-size: 12px;
+    }
+    .login-bottom a,
+    .login .login-bottom label{
+        font-size: 12px;
+    }
+
+}
+
+
+
